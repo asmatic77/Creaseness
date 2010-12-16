@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 2.6)
+ 
+PROJECT(Creaseness)
+ 
+FIND_PACKAGE(ITK REQUIRED)
+INCLUDE(${ITK_USE_FILE})
+ 
+ADD_EXECUTABLE(Creaseness main.cxx)
+TARGET_LINK_LIBRARIES(Creaseness ITKIO ITKBasicFilters ITKCommon )
